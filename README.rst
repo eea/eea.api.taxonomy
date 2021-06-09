@@ -8,7 +8,7 @@ eea.api.taxonomy
   :target: https://ci.eionet.europa.eu/job/eea/job/eea.api.taxonomy/job/master/display/redirect
   :alt: Master
 
-The eea.api.taxonomy is a Plone add-on
+RestAPI endpoint for [collective.taxonomy](https://github.com/collective/collective.taxonomy)
 
 .. contents::
 
@@ -16,9 +16,9 @@ The eea.api.taxonomy is a Plone add-on
 Main features
 =============
 
-1. Easy to install/uninstall via Site Setup > Add-ons
-2.
-3.
+1. RestAPI: GET
+2. RestAPI: PATCH
+3. RestAPI: ControlPanel
 
 Install
 =======
