@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0-dev0 - (unreleased)
+1.0 - (2021-06-09)
 -----------------------
 
 * Initial release: RestAPI endpoint GET, PATCH, ControlPanel
