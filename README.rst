@@ -8,7 +8,7 @@ eea.api.taxonomy
   :target: https://ci.eionet.europa.eu/job/eea/job/eea.api.taxonomy/job/master/display/redirect
   :alt: Master
 
-RestAPI endpoint for [collective.taxonomy](https://github.com/collective/collective.taxonomy)
+RestAPI endpoint for `collective.taxonomy <https://github.com/collective/collective.taxonomy>`_
 
 .. contents::
 
