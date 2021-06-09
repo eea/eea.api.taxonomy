@@ -1,0 +1,11 @@
+version: "2"
+services:
+  plone:
+    image: plone:5
+    ports:
+    - "8080"
+    volumes:
+    - ../../:/plone/instance/src/eea.api.taxonomy
+    environment:
+      ADDONS: "eea.api.taxonomy[test]"
+      DEVELOP: "src/eea.api.taxonomy"
