@@ -4,6 +4,9 @@ Changelog
 1.1-dev0 - (unreleased)
 ---------------------------
 
+* Bug fix: Fix RestAPI PATCH for Python 2
+  [avoinea - refs #134513]
+
 1.0 - (2021-06-09)
 -----------------------
 
