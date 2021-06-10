@@ -51,7 +51,7 @@ class TaxonomyPatch(Service):
             data_for_taxonomy = []
             for i in order:
                 item = tree[i]
-                data_for_taxonomy.append(["{}{}".format(
+                data_for_taxonomy.append([u"{}{}".format(
                     PATH_SEPARATOR, item['title'],
                 ), item['token']])
 
