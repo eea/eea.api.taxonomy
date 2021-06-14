@@ -1,5 +1,7 @@
 """ Monkey patches
 """
+# pylint: disable = C0111, W0702, C1801
+
 from plone import api
 from collective.taxonomy import LEGACY_PATH_SEPARATOR
 from collective.taxonomy import NODE
