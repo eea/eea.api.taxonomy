@@ -3,7 +3,7 @@ Changelog
 
 1.3 - (2021-06-14)
 ---------------------------
-* Change: Avoid hardcoding if possible in collective.taxonomy patch
+* Change: Hardocde 'en' language in collective.taxonomy patch
   [iulianpetchesi - refs #131802]
 
 1.2 - (2021-06-14)
