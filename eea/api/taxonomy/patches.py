@@ -16,7 +16,7 @@ def taxonomy_call(self, context):
 
     request = getattr(context, "REQUEST", None)
     if not request:
-        language = self.data.keys()[0] or 'en'
+        language = 'en'
     else:
         language = self.getCurrentLanguage(request)
 
@@ -38,7 +38,7 @@ def taxonomy_translate(
         try:
             target_language = str(api.portal.get_current_language())
         except:
-            target_language = list(self.inverted_data.keys())[0] or 'en'
+            target_language = 'en'
 
         if target_language not in self.inverted_data:
             # might be a non standard language or the portal has
