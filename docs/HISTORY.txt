@@ -3,6 +3,8 @@ Changelog
 
 1.5-dev0 - (unreleased)
 ---------------------------
+* Change: Fixed package classifiers and python_requires
+  [avoinea refs #139888]
 
 1.4 - (2021-06-16)
 ---------------------------
