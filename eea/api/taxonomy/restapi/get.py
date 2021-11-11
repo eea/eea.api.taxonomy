@@ -1,5 +1,7 @@
 """ RestAPI GET
 """
+# pylint: disable = R1710
+
 from collective.taxonomy.interfaces import ITaxonomy
 from plone.restapi.interfaces import ISerializeToJson
 from plone.restapi.services import Service
