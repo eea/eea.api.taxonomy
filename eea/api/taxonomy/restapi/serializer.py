@@ -39,6 +39,8 @@ class TaxonomySerializer(object):
                         # TO DO: do subpaths
                         'title': k.replace(PATH_SEPARATOR, PRETTY_PATH_SEPARATOR),
                         'token': langdata[k],
+                        # Ignore the first item because it is empty
+                        'hierarchy': k.split(PATH_SEPARATOR)[1:]
                     } for k in langdata.keys()
                 ]
                 order = util.order[lang]
