@@ -1,6 +1,6 @@
 """ RestAPI Taxonomy serializer
 """
-from collective.taxonomy import PATH_SEPARATOR
+from collective.taxonomy import PATH_SEPARATOR, PRETTY_PATH_SEPARATOR
 from collective.taxonomy.interfaces import ITaxonomy
 from plone.api import portal
 from plone.restapi.interfaces import ISerializeToJson
@@ -37,8 +37,8 @@ class TaxonomySerializer(object):
                 results['data'][lang] = [
                     {
                         # TO DO: do subpaths
-                        'title': k.replace(PATH_SEPARATOR, ''),
-                        'token': langdata[k]
+                        'title': k.replace(PATH_SEPARATOR, PRETTY_PATH_SEPARATOR),
+                        'token': langdata[k],
                     } for k in langdata.keys()
                 ]
                 order = util.order[lang]
