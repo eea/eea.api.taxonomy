@@ -11,6 +11,15 @@ from zope.interface import implementer
 from zope.publisher.interfaces import IPublishTraverse
 
 
+def get_taxonomy_item_title(item):
+    """Build the title of this taxonomy item. To do this we need to iterate
+    over the hierarchy attribute of the parameter and build a title using
+    the proper separator"""
+    return "{}{}".format(
+        PATH_SEPARATOR, PATH_SEPARATOR.join(item["hierarchy"])
+    )
+
+
 @implementer(IPublishTraverse)
 class TaxonomyPatch(Service):
     """ Patch a taxonomy
@@ -51,9 +60,8 @@ class TaxonomyPatch(Service):
             data_for_taxonomy = []
             for i in order:
                 item = tree[i]
-                data_for_taxonomy.append([u"{}{}".format(
-                    PATH_SEPARATOR, item['title'],
-                ), item['token']])
+                title = get_taxonomy_item_title(item)
+                data_for_taxonomy.append([title, item["token"]])
 
             taxonomy.update(language, data_for_taxonomy, True)
 
